@@ -18,31 +18,29 @@
         p{
             display: block;
             margin: 20px;
-            animation: jump 1s infinite; /* Użyj animacji */
+            animation: jump 1s infinite; 
         }
-/* Definicja animacji */
-@keyframes jump {
-    0%, 100% {
-        transform: translateY(0); /* Początkowa i końcowa pozycja */
-    }
-    50% {
-        transform: translateY(-20px); /* Podskok w górę */
-    }
-}
-
-/* Ustawienie opóźnienia dla każdego p */
-p:nth-child(1) {
-    animation-delay: 0s;
-}
-p:nth-child(2) {
-    animation-delay: 0.5s;
-}
-p:nth-child(3) {
-    animation-delay: 1s;
-}
-p:nth-child(4) {
-    animation-delay: 1.5s;
-}
+        @keyframes jump {
+            0%, 100% {
+                transform: translateY(0); 
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    
+        p:nth-child(1) {
+            animation-delay: 0s;
+        }
+        p:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+        p:nth-child(3) {
+            animation-delay: 1s;
+        }
+        p:nth-child(4) {
+            animation-delay: 1.5s;
+        }
     </style>
 </head>
 <body>
